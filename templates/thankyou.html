@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block title %}Questions{%endblock%} {% block
+content %} {% for msg in get_flashed_messages() %}
+<p>{{msg}}</p>
+{% endfor %}
+<h1>Thank you for completing the survey!!</h1>
+
+<h4>
+  You will get a $50 discount next time you spend a minimun of $100 with us
+</h4>
+
+{% endblock %}
